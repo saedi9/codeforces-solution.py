@@ -4,7 +4,7 @@ def polyCarp(s):
     if s[i] != s[i + 1]:
       if s[i + 1] in a:
         return False
-      a.add(s[i+1])
+      a.add(s[i + 1])
   return True
 
 
@@ -17,7 +17,6 @@ for i in range(t):
     print('YES')
   else:
     print('NO')
-
 
 # def polyCarp(s):
 #   a = [0] * 256
