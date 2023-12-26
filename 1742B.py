@@ -2,9 +2,8 @@ t = int(input())
 while t:
     t -= 1
     a = int(input())
-    b = [int(x) for x in input().split()]
-    c = set(b)
-    if len(b) == len(c):
+    b = set([int(x) for x in input().split()])
+    if len(b) == a:
         print('YES')
     else:
         print('NO')

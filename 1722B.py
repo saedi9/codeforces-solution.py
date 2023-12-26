@@ -1,5 +1,4 @@
 t = int(input())
-h = 'BG'
 while t:
   t -= 1
   col = int(input())
@@ -7,9 +6,8 @@ while t:
   r2 = input()
   f = True
   for i in range(0, col):
-    if r1[i] != r2[i]:
-      print(r1[i],r2[i])
-      if r1[i] not in h or r1[i] in h and r2[i] not in h:
+    if r1[i]!=r2[i]:
+      if r1[i]=='R' or r2[i]=='R':
         f = False
         break
   if f:
